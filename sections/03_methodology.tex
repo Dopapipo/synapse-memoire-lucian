@@ -1,0 +1,61 @@
+
+\section{Methodology}
+
+This chapter outlines the methodological approach adopted to conduct a systematic literature review on code smells and technical debt. Given the diversity of perspectives in the field, a structured and reproducible method was crucial to ensure both academic rigor and practical relevance.
+
+\subsection{Research Design}
+
+Our study is designed as a Systematic Literature Review (SLR) following the guidelines provided by Kitchenham et al. (2007). The objective is not to merely collect references, but to synthesize key insights that answer our research questions (RQ1–RQ4) and guide real-world decisions.
+
+\subsection{Research Questions (recalled)}
+\begin{itemize}
+    \item \textbf{RQ1}: How do software metrics contribute to identifying code smells?
+    \item \textbf{RQ2}: How can we categorize code smells effectively?
+    \item \textbf{RQ3}: How can we use this categorization to prioritize and fix smells?
+    \item \textbf{RQ4}: What are the long-term benefits (qualitative and economic) of managing code smells as technical debt?
+\end{itemize}
+
+\subsection{Data Sources and Search Strategy}
+
+We conducted iterative keyword-based searches using Google Scholar, IEEE Xplore, SpringerLink, and ACM Digital Library. The keywords included: \textit{"code smell detection"}, \textit{"technical debt management"}, \textit{"architecture smell"}, \textit{"refactoring ROI"}.
+
+Additionally, snowballing was applied to key papers such as \textbf{Kazman et al. (2015)}, \textbf{Bamizadeh et al. (2021)}, and \textbf{Borg et al. (2024)} — the latter being particularly decisive in initiating the reflexive dimension of this work.
+
+\subsection{Inclusion and Exclusion Criteria}
+
+\begin{itemize}
+    \item \textbf{Time range}: 2008--2024 (with selected exceptions such as Fowler 1999 and Cunningham 1992)
+    \item \textbf{Type of documents}: Peer-reviewed conference papers, journal articles, and a few high-impact white papers
+    \item \textbf{Language}: Primarily English
+    \item \textbf{Accessibility}: Only articles with full text available (open access or via institutional login)
+\end{itemize}
+
+\subsection{Data Extraction}
+
+Each article was reviewed to extract the following elements:
+\begin{itemize}
+    \item Definitions of code smells and technical debt
+    \item Taxonomies or typologies proposed
+    \item Tools and methods used for detection
+    \item Empirical findings (quantitative/qualitative)
+    \item Refactoring strategies and ROI analysis (if any)
+\end{itemize}
+
+The extracted data were recorded in structured tracking tables and synthesis grids (see Appendix).
+
+\subsection{Quality Assurance}
+
+\begin{itemize}
+    \item Double-read validation for key papers
+    \item Manual tagging of themes to avoid over-reliance on automated keyword detection
+    \item Reflexive review cycles to ensure alignment with research objectives and context
+\end{itemize}
+
+\subsection{Tools Used}
+
+\begin{itemize}
+    \item Zotero: Reference management
+    \item Overleaf: Academic writing \& collaboration
+    \item Python + Pandas: For parsing and cross-analyzing article metadata
+    \item Custom shell scripts: To automate markdown extraction and log summaries
+\end{itemize}

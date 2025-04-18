@@ -1,0 +1,51 @@
+
+\section{Results and Cross-Analysis}
+
+\subsection{RQ1 – Metrics and Detection}
+
+Static metrics (e.g., LOC, CBO, LCOM) are heavily used in detection tools like SonarQube. 
+Borg et al. (2024) confirmed empirically that low "Code Health" metrics correlate with high defect rates. 
+However, architectural smells often escape metric-based tools. Visual approaches (Yamashita, 2015) and architectural anomaly clusters (Kazman et al., 2015) complement quantitative detection, suggesting the need for hybrid strategies.
+
+\subsection{RQ2 – Categorization of Smells}
+
+Bamizadeh et al. (2021) propose over 65 categorized smells grouped in 7 families, including Bloaters, Object-Orientation Abusers, Dispensables, and Change Preventers. The distinction between implementation-level and architectural-level smells proves fundamental for effective management. Typologies support targeted remediation strategies based on impact scope and criticality.
+
+\subsection{RQ3 – Prioritization and Refactoring}
+
+SonarQube assigns a "technical debt cost" per smell, enabling localized prioritization. 
+Kazman et al. (2015) go further by estimating the ROI of architectural refactoring in real-world systems, linking structure to maintenance costs. 
+Borg et al. (2024) confirm that proactive refactoring reduces defect propagation. 
+However, no unified tool currently bridges the implementation–architecture divide. The vision of a global debt-aware platform is emerging.
+
+\subsection{RQ4 – Practices and Long-Term Impact}
+
+Clean Code, TDD, and continuous refactoring reduce smell accumulation and help maintain system health. Books like \textit{The Pragmatic Programmer} and \textit{Tidy First?} (Fowler, 2021) support a mindset of sustainable development. 
+Beyond tools, organizational culture (e.g., DMS, onboarding practices) plays a crucial role in maintaining agility. 
+For example, integrating SonarQube into company pipelines not only improves code quality but also simplifies onboarding for junior developers, yielding a higher human and productivity ROI.
+
+\subsection{Cross-Analysis Table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|p{6cm}|p{6cm}|}
+\hline
+\textbf{RQ} & \textbf{Main Insight} & \textbf{Practical Implication} \\
+\hline
+RQ1 & Metrics detect but don't explain root causes & Combine metrics with structural and historical analysis \\
+\hline
+RQ2 & Categorization enables tailored refactoring & Design context-sensitive remediation strategies \\
+\hline
+RQ3 & Prioritization is stronger when linked to architectural ROI & Align technical decisions with business outcomes \\
+\hline
+RQ4 & Sustainable practices amplify code quality benefits & Culture matters more than tools alone \\
+\hline
+\end{tabular}
+\caption{Synthesis of findings and implications across research questions}
+\end{table}
+
+\subsection{Summary}
+
+A multi-level, multi-modal approach is needed to manage code smells and technical debt effectively. 
+While tools like SonarQube offer valuable static insights, they must be embedded in organizational practices and combined with strategic thinking to be impactful. 
+Agility, in this context, is not a methodology but a mindset — and lucidity, through introspection and iteration, becomes a driver for both individual and systemic improvement.
